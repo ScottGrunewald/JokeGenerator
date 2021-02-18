@@ -1,0 +1,10 @@
+/home/sarahpaajanen/development/take home tests/original/CS-Challenge-master/ConsoleApp1/bin/Debug/netcoreapp2.1/JokeGenerator.deps.json
+/home/sarahpaajanen/development/take home tests/original/CS-Challenge-master/ConsoleApp1/bin/Debug/netcoreapp2.1/JokeGenerator.runtimeconfig.json
+/home/sarahpaajanen/development/take home tests/original/CS-Challenge-master/ConsoleApp1/bin/Debug/netcoreapp2.1/JokeGenerator.runtimeconfig.dev.json
+/home/sarahpaajanen/development/take home tests/original/CS-Challenge-master/ConsoleApp1/bin/Debug/netcoreapp2.1/JokeGenerator.dll
+/home/sarahpaajanen/development/take home tests/original/CS-Challenge-master/ConsoleApp1/bin/Debug/netcoreapp2.1/JokeGenerator.pdb
+/home/sarahpaajanen/development/take home tests/original/CS-Challenge-master/ConsoleApp1/obj/Debug/netcoreapp2.1/JokeGenerator.csprojAssemblyReference.cache
+/home/sarahpaajanen/development/take home tests/original/CS-Challenge-master/ConsoleApp1/obj/Debug/netcoreapp2.1/JokeGenerator.AssemblyInfoInputs.cache
+/home/sarahpaajanen/development/take home tests/original/CS-Challenge-master/ConsoleApp1/obj/Debug/netcoreapp2.1/JokeGenerator.AssemblyInfo.cs
+/home/sarahpaajanen/development/take home tests/original/CS-Challenge-master/ConsoleApp1/obj/Debug/netcoreapp2.1/JokeGenerator.dll
+/home/sarahpaajanen/development/take home tests/original/CS-Challenge-master/ConsoleApp1/obj/Debug/netcoreapp2.1/JokeGenerator.pdb

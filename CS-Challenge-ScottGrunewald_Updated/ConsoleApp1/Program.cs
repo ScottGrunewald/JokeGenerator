@@ -32,8 +32,9 @@ namespace JokeGenerator
         static readonly string descriptionText = "Follow the prompts to read Chuck Norris jokes.";
         static readonly string categoryText = "Press c to see a list of joke categories";
         static readonly string randomJokeText = "Press r to get random jokes";
-        static readonly string randomNameQuestionText = "Want to use a random name? y/n";
-        static readonly string categoryQuestionText = "Want to specify a category? y/n";
+        static readonly string randomNameQuestionText = "Do you want to change the name in the joke? (y/n)";
+        static readonly string yourNameQuestionText = "Do you want to enter your own name? (y for yes / n for random name)";
+        static readonly string categoryQuestionText = "Do you want to specify a category? (y/n)";
         static readonly string numberOneToNineText = "Please enter a number between 1 and 9";
         static readonly string quitText = "Press q to quit";
         static readonly string returnToMenuText = "Press any key to return to the menu.";
@@ -43,6 +44,8 @@ namespace JokeGenerator
         static readonly string enterCategoryText = "Enter a category:";
         static readonly string pleaseChooseText = "Please choose c, r, or q! Press any key to continue.";
         static readonly string categoryHeadingText = "The current categories are as follows:";
+        static readonly string firstNameText = "Please enter your first name.";
+        static readonly string lastNameText = "Please enter your last name.";
 
         // Dictionary to hold keyboard input values
         static Dictionary<ConsoleKey, char> ourKeyDictionary;
@@ -79,7 +82,32 @@ namespace JokeGenerator
                         Console.WriteLine("");
                         if (key == 'y')
                         {
-                            GetNames();
+                            Console.WriteLine(yourNameQuestionText);
+                            Boolean yourNameBreakFlag = false;
+                            while (yourNameBreakFlag == false)
+                            {
+                                GetEnteredKey(Console.ReadKey());
+                                Console.WriteLine("");
+                                if (key == 'y')
+                                {
+                                    // Let the user enter a name
+                                    Console.WriteLine(firstNameText);
+                                    String ourFirstName = Console.ReadLine();
+                                    Console.WriteLine(lastNameText);
+                                    String ourLastName = Console.ReadLine();
+                                    names = Tuple.Create(ourFirstName, ourLastName);
+                                    yourNameBreakFlag = true;
+                                }
+                                else if (key == 'n')
+                                {
+                                    GetNames();
+                                    yourNameBreakFlag = true;
+                                }
+                                else
+                                {
+                                    Console.WriteLine(yesOrNoText);
+                                }
+                            }
                             randNameBreakFlag = true;
                         }
                         else if (key == 'n')
@@ -91,6 +119,7 @@ namespace JokeGenerator
                             Console.WriteLine(yesOrNoText);
                         }
                     }
+                    
                     Console.WriteLine(categoryQuestionText);
                     Boolean catBreakFlag = false;
                     while (catBreakFlag == false)
